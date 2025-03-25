@@ -11,27 +11,12 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- Main Title Icon -->
     <link rel="icon" type="image/gif/png" href="./images/Main Tab Image-Logo.png">
-    <title>Responsive Login Slider</title>
+    <title>Login</title>
 </head>
 
-<body>   
-
-    <div class="containter">
-        @if (session('success'))
-        <div class="message-container">
-            <p class="success">
-                {{ session('success')  }}
-            </p>
-        </div>        
-    @endif
-
-    @if (session('error'))
-        <div class="message-container">
-            <p class="error">
-                {{ session('error')  }}
-            </p>
-        </div>        
-    @endif
+<body> 
+    <x-alert />
+    <div class="containter">        
         <div class="bluebg">
             <div class="box signin">
                 <!-- Sign In Button -->
@@ -65,9 +50,9 @@
 
                     <i class='bx bxs-user signupimage'></i>
                     <h3>Sign Up</h3>
-                    <input type="text" name="name" id="name" value="{{ old('name') }}"  placeholder=" Username" required>
-                    <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder=" Your best e-mail" required>
-                    <input type="password" name="password" id="password" value="{{ old('password') }}" placeholder=" Password" required>                    
+                    <input type="text" name="name" id="name" value="{{ old('name') }}"  placeholder=" Username">
+                    <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder=" Your best e-mail">
+                    <input type="password" name="password" id="password" value="{{ old('password') }}" placeholder=" Password">                    
                     {{-- <input type="password" placeholder=" Confirm Password"> --}}
                     <input type="submit" value="Register">
                 </form>
@@ -76,5 +61,4 @@
     </div>
     <script src="script.js"></script>     
 </body>
-
 </html>
