@@ -9,3 +9,21 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer components {
+    .btn-primary {
+      @apply px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded cursor-pointer 
+    }
+    .btn-success {
+        @apply px-3 py-1 bg-cyan-500 hover:bg-cyan-600 text-white rounded cursor-pointer 
+      }
+    .btn-success {
+        @apply px-3 py-1 bg-green-500 hover:bg-green-600 text-white rounded cursor-pointer 
+      }
+    .btn-warning {
+    @apply px-3 py-1 bg-yellow-500 hover:bg-yellow-600 text-white rounded cursor-pointer 
+    }
+    .btn-danger {
+        @apply px-3 py-1 bg-red-500 hover:bg-red-400 text-white rounded cursor-pointer 
+      }
+  }
