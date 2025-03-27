@@ -1,4 +1,5 @@
-@if (session('success'))
+<x-base-layout>
+    @if (session('success'))
     <div class="message-container">
         <p class="success">
             {{ session('success')  }}
@@ -23,3 +24,4 @@
         </p>
     </div>   
 @endif
+</x-base-layout>

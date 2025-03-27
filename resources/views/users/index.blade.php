@@ -12,7 +12,6 @@
 </head>
 
 <body> 
-    <x-alert />  
     {{-- @dd($users)   --}}
     <div>
       <section class="mt-10">
@@ -74,7 +73,7 @@
                                 <td class="px-4 py-3"> {{ $user->updated_at }}</td>
                                 <td class="px-4 py-3 flex items-center gap-2 justify-end">
                                     <button class="btn-primary">Visualizar</button>
-                                    <button class="btn-warning">Editar</button>
+                                    <a href=" {{ route('user.edit', ['user' => $user->id]) }} "><button class="btn-warning">Editar</button></a>
                                     <button class="btn-danger">Apagar</button>
                                 </td>
                             </tr>
